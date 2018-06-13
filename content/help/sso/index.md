@@ -84,7 +84,7 @@ Vanilla will replace `{target}` by the page the user is currently on when genera
 Example (using jsConnect): `https://sso.example.com/jsconnect/signin?redirect={target}` would become something like
 `https://sso.example.com/jsconnect/signin?redirect=/discussions`
 
-## Logging users out
+### Logging users out
 
 We recommend using the default logout approach, which is generally accomplished by 1) Setting a default connection and 2) including in its config your site's signout URL. After a user clicks "Sign Out" on Vanilla, we will redirect them to your page. If someone signs out on your side, we recommend doing the opposite: send them through our signout page. You can redirect them afterward by including a `Target` paramenter indicating the URL you wish them to land on afterward.
 
